@@ -53,6 +53,7 @@ h2 {
 
 .card {
   width: 48%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   background-color: #fbf7e3;
@@ -265,5 +266,96 @@ h2 {
 
   .main-article img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  nav {
+    background-color: #fbf7e3;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 0;
+    float: left;
+    margin-right: 2.5rem;
+    height: 100vh;
+    position: fixed;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  nav button {
+    background-color: #f3df85;
+    border: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #5f2109;
+    padding: 1rem;
+    border-radius: 50px;
+    white-space: nowrap;
+    width: 230px;
+    height: 110px;
+  }
+
+  nav button img {
+    height: 75px;
+    margin-right: 1rem;
+  }
+
+  nav > button:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f3df85;
+    border: 0;
+
+    color: #5f2109;
+    padding: 1rem;
+    border-radius: 50px;
+    white-space: nowrap;
+    order: -1;
+  }
+
+  main {
+    margin-left: 30%;
+  }
+
+  .card:nth-of-type(3) {
+    display: none;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .best-selling-card {
+    justify-content: space-around;
+  }
+
+  .card-description-part-one {
+    padding-inline: 1rem;
+  }
+
+  .main-article {
+    flex-direction: column-reverse;
+    padding-inline: 2rem;
+  }
+
+  .main-article img {
+    width: 100%;
+  }
+
+  .main-article p {
+    font-size: 1rem;
   }
 }
