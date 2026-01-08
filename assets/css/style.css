@@ -113,3 +113,33 @@ body > nav > button:nth-child(3) {
   flex-direction: column;
   align-items: center;
 }
+
+.main-article {
+  display: flex;
+  background-color: #fbf7e3;
+  border-radius: 30px;
+  padding: 1.3rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.3rem;
+  color: #5f2109;
+}
+
+.main-article p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.main-article img {
+  width: 55%;
+}
+
+@media screen and (max-width: 800px) {
+  .main-article {
+    flex-direction: column-reverse;
+  }
+
+  .main-article img {
+    width: 100%;
+  }
+}
